@@ -1,0 +1,21 @@
+[user]
+	name = Anna Pavlova
+	email = annap@dev-pro.net
+[color]
+	ui = auto
+[merge]
+	tool = SourceGear
+[core]
+	autocrlf = true
+[diff]
+	guitool = SourceGear
+[difftool "SourceGear"]
+	path = C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe
+	cmd = \"C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe\" --title1=\"Base - $LOCAL\"  --title2=\"Mine - $REMOTE\" \"$LOCAL\" \"$REMOTE\"
+[mergetool "SourceGear"]
+	path = C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe
+	cmd = \"C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe\" \"$LOCAL\" \"$BASE\" \"$REMOTE\" --result=\"$MERGED\" --title1=\"Mine\" --title2=\"Merge result\" --title3=\"Theirs
+[alias]
+  st = status
+  ci = commit
+  co = checkout
