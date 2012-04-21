@@ -2,7 +2,11 @@
 	name = Anna Pavlova
 	email = anna.pbox@gmail.com
 [color]
-	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
 [merge]
 	tool = SourceGear
 [core]
@@ -19,3 +23,5 @@
   st = status -s
   ci = commit
   co = checkout
+
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
