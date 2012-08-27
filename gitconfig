@@ -2,7 +2,11 @@
 	name = Anna Pavlova
 	email = annap@dev-pro.net
 [color]
-	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
 [merge]
 	tool = SourceGear
 [core]
@@ -16,6 +20,7 @@
 	path = C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe
 	cmd = \"C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe\" \"$LOCAL\" \"$BASE\" \"$REMOTE\" --result=\"$MERGED\" --title1=\"Mine\" --title2=\"Merge result\" --title3=\"Theirs
 [alias]
+
 	st = status -s
 	ci = commit
 	co = checkout
