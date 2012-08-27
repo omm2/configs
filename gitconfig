@@ -1,6 +1,6 @@
 [user]
 	name = Anna Pavlova
-	email = anna.pbox@gmail.com
+	email = annap@dev-pro.net
 [color]
 	ui = auto
 [merge]
@@ -16,6 +16,10 @@
 	path = C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe
 	cmd = \"C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe\" \"$LOCAL\" \"$BASE\" \"$REMOTE\" --result=\"$MERGED\" --title1=\"Mine\" --title2=\"Merge result\" --title3=\"Theirs
 [alias]
-  st = status -s
-  ci = commit
-  co = checkout
+	st = status -s
+	ci = commit
+	co = checkout
+	pullr = pull --rebase
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	undo = !git reset --hard
+	uncommit = !git reset --soft HEAD^
