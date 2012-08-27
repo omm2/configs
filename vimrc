@@ -257,7 +257,15 @@ au FocusLost * :wa
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
- 
+
+" leader + , to launch NERDTree
+nmap <leader>, :NERDTree <CR>
+
+"open NERDTree in every tab
+autocmd VimEnter * NERDTree
+autocmd BufEnter * NERDTreeMirror
+autocmd VimEnter * wincmd w
+
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:>-,eol:¬
 
